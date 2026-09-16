@@ -1,4 +1,4 @@
-let cityInput = document.getElementById("cityInput");
+let cityInput = document.getElementById("cityInput");git
 let searchBtn = document.getElementById("searchBtn");
 let weatherBox = document.getElementById("weather");
 
@@ -15,7 +15,7 @@ searchBtn.addEventListener("click", async function() {
         weatherBox.innerHTML = "";
 weatherBox.textContent = "Searching weather for " + city;
 
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_Key}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
     let response = await fetch(url);
 
     if (!response.ok) {
